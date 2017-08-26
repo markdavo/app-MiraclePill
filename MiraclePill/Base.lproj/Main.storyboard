@@ -1,24 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MiraclePill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="YQx-tH-KZX">
+                                <rect key="frame" x="137.5" y="40" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="efy-XW-xyt"/>
+                                    <constraint firstAttribute="width" constant="100" id="nF3-VU-7Wo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miracle PIlls" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTW-P8-O4k">
+                                <rect key="frame" x="102.5" y="165" width="170" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="EKH-cE-rOm"/>
+                                    <constraint firstAttribute="height" constant="35" id="sjB-gH-gNN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                <color key="textColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8I3-Lc-ntE">
+                                <rect key="frame" x="161" y="204" width="53.5" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-Zu-TKZ" userLabel="Divider">
+                                <rect key="frame" x="20" y="247" width="335" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="LgX-uC-mmX"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dQe-Ua-YOy">
+                                <rect key="frame" x="20" y="283" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tjf-yh-WXS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz1-m0-hro">
+                                <rect key="frame" x="20" y="256" width="335" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="5Qf-oB-GtS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gBL-Zu-TKZ" firstAttribute="top" secondItem="8I3-Lc-ntE" secondAttribute="bottom" constant="10" id="ARE-XZ-8Cr"/>
+                            <constraint firstItem="8I3-Lc-ntE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CNq-ev-Pd3"/>
+                            <constraint firstItem="gBL-Zu-TKZ" firstAttribute="centerX" secondItem="8I3-Lc-ntE" secondAttribute="centerX" id="Cqz-MZ-u3b"/>
+                            <constraint firstItem="dQe-Ua-YOy" firstAttribute="leading" secondItem="Pz1-m0-hro" secondAttribute="leading" id="IeI-Nm-9OO"/>
+                            <constraint firstItem="NTW-P8-O4k" firstAttribute="top" secondItem="YQx-tH-KZX" secondAttribute="bottom" constant="25" id="K8U-FC-9Pa"/>
+                            <constraint firstItem="dQe-Ua-YOy" firstAttribute="top" secondItem="Pz1-m0-hro" secondAttribute="bottom" constant="2" id="LEG-BZ-hRg"/>
+                            <constraint firstItem="dQe-Ua-YOy" firstAttribute="trailing" secondItem="Pz1-m0-hro" secondAttribute="trailing" id="Lw9-LX-Ajo"/>
+                            <constraint firstItem="8I3-Lc-ntE" firstAttribute="top" secondItem="NTW-P8-O4k" secondAttribute="bottom" constant="4" id="MZ5-9f-NuO"/>
+                            <constraint firstItem="NTW-P8-O4k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nas-nZ-9Ir"/>
+                            <constraint firstItem="YQx-tH-KZX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="TDB-4I-caa"/>
+                            <constraint firstAttribute="trailing" secondItem="gBL-Zu-TKZ" secondAttribute="trailing" constant="20" id="Wlq-vC-f3l"/>
+                            <constraint firstItem="Pz1-m0-hro" firstAttribute="trailing" secondItem="gBL-Zu-TKZ" secondAttribute="trailing" id="cfL-Dl-Ipo"/>
+                            <constraint firstItem="Pz1-m0-hro" firstAttribute="leading" secondItem="gBL-Zu-TKZ" secondAttribute="leading" id="pVS-4F-Ny4"/>
+                            <constraint firstItem="gBL-Zu-TKZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="uAz-uL-xkf"/>
+                            <constraint firstItem="Pz1-m0-hro" firstAttribute="top" secondItem="gBL-Zu-TKZ" secondAttribute="bottom" constant="8" id="v1e-1Y-beD"/>
+                            <constraint firstItem="YQx-tH-KZX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ycW-Ne-yX9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="156.97151424287858"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="miraclePillEmoji" width="90" height="90"/>
+    </resources>
 </document>
